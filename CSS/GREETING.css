@@ -1,0 +1,124 @@
+/* Ensure body takes full height and removes default margin */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #b40000, #ff0000); /* Gradient background */
+    background-repeat: no-repeat;
+}
+
+/* Center the opening screen */
+.opening-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#birthday-content{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width:500px;
+    border-radius:  10px;
+    background-color: rgba(255, 255, 255, 0.8)
+
+}
+
+
+
+
+
+/* Birthday content box */
+.birthday-box {
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+
+
+/* Style the buttons */
+.styled-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #000000;
+}
+
+/* Make the surprise button bigger */
+.surprise-button {
+    padding: 15px 30px; /* Increased padding for a bigger button */
+    font-size: 20px; /* Increased font size */
+}
+
+/* Video carousel container */
+.video-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Carousel controls */
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    position: relative;
+}
+
+#prev-button {
+    left: 0;
+}
+#next-button {
+    right: 0;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Confetti */
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.hidden{
+    display: none;
+}
